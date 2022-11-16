@@ -11,13 +11,19 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     </Tab>
-   
-    <FlyoutItem Title="Advanced Calculator">
+
+
+    <FlyoutItem Title="Welcome To USE Calculator">
+        <Tab>
+            
+        </Tab>
+        </FlyoutItem>
+        <FlyoutItem Title="Click me to Calculate, Check History">
         <Tab>
             <ShellContent
                 ContentTemplate="{DataTemplate views:Main1115}"
-                Shell.TitleColor="CadetBlue"
-                Shell.BackgroundColor="Black" />
+                Shell.TitleColor="Red"
+                Shell.BackgroundColor="YellowGreen" />
         </Tab>
     </FlyoutItem>
 </Shell>
