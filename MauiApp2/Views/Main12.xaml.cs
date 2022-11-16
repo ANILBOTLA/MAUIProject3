@@ -1,7 +1,12 @@
 namespace MauiApp2.Views;
 using System;
+using System.Linq.Expressions;
+
 public partial class Main12 : ContentPage
 {
+
+
+    List<string> Expressions = new List<string>();
     public Main12()
     {
         InitializeComponent();
@@ -169,18 +174,18 @@ public partial class Main12 : ContentPage
     }
 
 
-    void OnCalculate(object sender, EventArgs e)
+    public void OnCalculate(object sender, EventArgs e)
     {
         if (currentState == 2)
         {
             if (secondNumber == 0)
                 LockNumberValue(resultText.Text);
-
             double result = Calculator.Calculate(firstNumber, secondNumber, mathOperator);
-
             this.CurrentCalculation.Text = $"{firstNumber} {mathOperator} {secondNumber}";
-
             this.resultText.Text = result.ToTrimmedString(decimalFormat);
+            Expressions.Add(CurrentCalculation.Text + "= " + resultText.Text);
+            History.printHistory(Expressions);
+            //History.OnCounterClicked1(sender,e);
             firstNumber = result;
             secondNumber = 0;
             currentState = -1;
@@ -191,8 +196,8 @@ public partial class Main12 : ContentPage
             this.CurrentCalculation.Text = $"{this.eval}";
             this.resultText.Text = this.values.Pop().ToString();
         }
-
     }
+
 
     void OnNegative(object sender, EventArgs e)
     {

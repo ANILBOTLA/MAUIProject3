@@ -3,5 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.Views.History"
              Title="History">
-    
+
+
+    <VerticalStackLayout>
+        <Grid x:Name="grid_name" Padding="16" RowSpacing="8" ColumnSpacing="8"
+          RowDefinitions="2*,*,*,*,*,*,*,*"
+          ColumnDefinitions="*,*,*,*,*,*,*">
+
+            <ListView ItemsSource="{Binding Exp}" />
+
+            <Button Text="FirstCalculate Next Click" Grid.RowSpan="1" Grid.ColumnSpan="6"
+                    
+                    
+                    x:Name="CounterBtn1"
+               Clicked="OnCounterClicked1" />
+
+        </Grid>
+    </VerticalStackLayout>
+
 </ContentPage>
