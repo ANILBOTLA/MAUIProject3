@@ -183,7 +183,7 @@ public partial class Main12 : ContentPage
             double result = Calculator.Calculate(firstNumber, secondNumber, mathOperator);
             this.CurrentCalculation.Text = $"{firstNumber} {mathOperator} {secondNumber}";
             this.resultText.Text = result.ToTrimmedString(decimalFormat);
-            Expressions.Add(CurrentCalculation.Text + "= " + resultText.Text);
+            Expressions.Add(CurrentCalculation.Text + " = " + resultText.Text);
             History.printHistory(Expressions);
             //History.OnCounterClicked1(sender,e);
             firstNumber = result;

@@ -1,5 +1,5 @@
 namespace MauiApp2.Views;
-
+using MauiApp2.Models;
 public partial class History : ContentPage
 {
 
@@ -21,6 +21,7 @@ public partial class History : ContentPage
                 if (i == 0)
                 {
                     CounterBtn1.Text = $"{i + 1}). {Exp[i]}";
+                    //TodoModel.ReferenceEquals(Exp[i], Exp[i - 1]);
                     SemanticScreenReader.Announce(CounterBtn1.Text);
                 }
                 if (i == 1)
