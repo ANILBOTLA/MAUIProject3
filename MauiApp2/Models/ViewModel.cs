@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MauiApp2.Models
 {
-    public class TodoModel
+    public class ViewModel
     {
         String Expression;
         String Result;
