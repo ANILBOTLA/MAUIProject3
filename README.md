@@ -2,7 +2,7 @@
 
 
 Subject: Cross Mobile Platform Development
-Project 2: Calculator with API Connection
+Project 3: Calculator History Generation With MVVM
 Team members: -
 1. Botla Anil(S678N659) (GithubID:ANILBOTLA)
 2. Avuluri Srinivasa Reddy(X879Q845) (GithubID:SrinivasareddyAvuluri)
