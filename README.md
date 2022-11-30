@@ -17,5 +17,9 @@ Team members: -
 Youtube Link: https://youtu.be/INplnJQpGMc
 GitRepoLink: https://github.com/ANILBOTLA/Project3
 
+git repos from my team members:-
+https://github.com/HarishReddyNadavaluru/Project3.git
+https://github.com/SrinivasareddyAvuluri/Pro3
+
 
 
